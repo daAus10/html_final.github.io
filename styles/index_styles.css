@@ -1,0 +1,415 @@
+/* Add your CSS styles here */
+body {
+  font-family: Inter, sans-serif;
+  width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Adjust body width for smaller screens */
+
+
+header {
+  background-color: rgb(250, 248, 243);
+  padding: 20px;
+}
+
+/* Updated .intro class to a flex column layout */
+.intro {
+  display: flex;
+  flex-direction:row;
+  /* align-items: center; */
+  background-color: rgb(250, 248, 243);
+}
+
+.intro h1 {
+ 
+  font-size: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px; /* Limit content width on larger screens */
+  margin: 0 auto;
+  padding-top: -20px; /* Add spacing at the top */
+}
+
+/* Adjust hero size for different screen sizes */
+.hero {
+  max-width: 100%;
+  
+  /* padding-left: 545px; */
+}
+
+/* Use media queries to rearrange content and hero image based on screen sizes */
+
+nav ul {
+  text-decoration: none;
+  list-style-type: none; /* Remove the default list style dots */
+  display: flex; /* Use flexbox to create a horizontal layout */
+  justify-content: space-between; /* Spread the items across the container */
+  align-items: center; /* Vertically center the items */
+}
+
+nav li {
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+nav li:nth-of-type(2) {
+  margin-left: 520px;
+}
+
+nav li:first-of-type{
+  margin-left: 20px;
+}
+
+.twt_lm{
+  margin-top: -400px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 400px;
+}
+
+.twt_bt {
+  display: flex; /* Use flexbox to arrange elements side by side */
+  align-items: center; /* Vertically center the items in the button */
+  background-color: rgb(76, 169, 232);
+  color: white;
+  padding: 10px;
+  height: -200px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+  margin-right: 20px;
+  width: 200px;
+}
+
+.twt_bt img {
+  margin-right: 10px; /* Add spacing between the image and text */
+}
+
+header img {
+  height: 50px;
+}
+
+/* Your existing CSS styles below */
+.avatar-stack {
+  position: relative;
+  display: flex;
+  margin-right: 100px;
+  margin-top: -100px;
+}
+
+.avatar-stack  {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%,950%);
+}
+
+/* transform :translateX(-100%) ;transform :translateY(-25px) */
+.avatar-stack img:nth-child(1) { transform :translateX(400%); }
+.avatar-stack img:nth-child(2) { transform :translateX(350%); }
+.avatar-stack img:nth-child(3) { transform :translateX(300%); }
+.avatar-stack img:nth-child(4) {transform :translateX(250%); }
+.avatar-stack img:nth-child(5) { transform :translateX(200%); }
+.avatar-stack img:nth-child(6) { transform :translateX(150%); }
+.avatar-stack img:nth-child(7) { transform :translateX(100%); }
+.avatar-stack img:nth-child(8) { transform :translateX(50%); }
+.avatar-stack img:nth-child(9) { transform :translateX(0%); }
+
+.tiny_desc {
+  padding-top: -530px;
+  padding-right: 800px;
+  overflow-y: auto;
+  width: auto;
+  background-color: rgb(250, 248, 243);
+  width: fit-content;
+  align-items: center;
+}
+
+.tiny_desc p {
+  position: absolute;
+  padding-top: -120px;
+  margin-top: -200px;
+  font-size: 23px;
+}
+
+/* CSS for grid layout */
+.grid-container {
+  padding-right: 125px;
+  padding-left: 125px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 20px; /* Gap between boxes */
+}
+
+.box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+/* Styling for feat_tit class */
+.feat_tit {
+  padding-top: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000; /* You can change this to your desired color */
+  margin-bottom: 10px;
+}
+
+/* Add CSS styles to align tweet elements horizontally */
+img {
+  max-width: 100%;
+}
+
+.avator {
+  border-radius: 100px;
+  width: 48px;
+  margin-right: 15px;
+}
+
+#custSay {
+  background-color: rgb(221, 244, 244);
+  margin-bottom: -20px;
+  padding-top: 40px;
+}
+
+.tweets_container {
+  display: flex;
+  background-color: rgb(221, 244, 244);
+  padding-bottom: 20px;
+}
+
+.tweet-wrap {
+  max-width: 300px;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 3px;
+  padding: 30px;
+  border: 1px solid #a78484;
+  display: flex;
+  flex-direction: column; /* Change to column layout */
+}
+
+.tweet-header {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+}
+
+.tweet-header-info {
+  font-weight: bold;
+}
+
+.tweet-header-info span {
+  color: #657786;
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.tweet-header-info p {
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.tweet-info-counts {
+  display: flex;
+  margin-top: 10px;
+}
+
+.tweet-info-counts div {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.tweet-info-counts div svg {
+  color: #657786;
+  margin-right: 10px;
+}
+
+
+.date {
+  padding-left: 180px;
+}
+
+.bl_twt_icon {
+  align-self: flex-start;
+  margin-top: -90px;
+  margin-right: -580px;
+}
+
+.username {
+  margin-right: 200px;
+}
+
+.plan_tit, .plan_desc {
+  text-align: center;
+  margin-inline: 350px;
+}
+
+.plan {
+  margin-inline: 400px;
+  align-items: center;
+  background-color: rgb(250, 248, 243);
+  border: rgb(249, 231, 203) solid 1px;
+  border-radius: 10px;
+  margin-bottom: 150px;
+}
+
+hr {
+  border: none; /* Remove the default border */
+  height: 1px; /* Set the height of the line */
+  background-color: #ccc; /* Set the color of the line */
+  margin-block: 20px;
+  width: 80%;
+  align-items: center;
+}
+
+.bt_tit, p.bt_9 {
+  margin-top: 20px;
+  display: inline; /* or inline-block */
+}
+
+.bt_tit {
+  margin-right: -5px;
+  margin-left: 40px;
+}
+
+/* Add your CSS styles here */
+.checklist {
+  list-style: none; /* Remove default bullet points */
+  padding-left: 0; /* Remove default padding */
+}
+
+.checklist li {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  display: flex; /* Use flexbox to arrange elements side by side */
+  align-items: center; /* Vertically center the image and text */
+  margin-bottom: 10px; /* Add some spacing between list items */
+}
+
+.checklist li img {
+  margin-right: 10px; /* Add some spacing between the image and text */
+  width: 20px; /* Set the image width as needed */
+  height: 20px; /* Set the image height as needed */
+}
+
+#twt3 {
+  display: flex; /* Use flexbox to arrange elements side by side */
+  align-items: center; /* Vertically center the items in the button */
+  background-color: rgb(76, 169, 232);
+  color: white;
+  padding: 0px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 0px;
+  width: 325px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+#line2{
+  margin-bottom: 25px;
+}
+
+.twt3_img, .twt_p {
+  margin-left: 80px;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(221, 244, 244);
+  padding-bottom: 0px; /* Add padding to center the content */
+  position: relative;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: max-height 0.3s ease;
+}
+
+.horizontal-list2 {
+  text-decoration: none;
+  list-style-type: none; /* Remove the default list style dots */
+  display: flex; /* Use flexbox to create a horizontal layout */
+  justify-content: space-between; /* Spread the items across the container */
+  align-items: center; /* Vertically center the items */
+}
+
+.horizontal-list2 li {
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.horizontal-list2 li:nth-of-type(2) {
+  margin-left: auto;
+}
+
+.horizontal-list2 li:nth-of-type(3) {
+  margin-left: 20px;
+}
+
+.horizontal-list2 li:nth-of-type(4) {
+  margin-left: 20px;
+}
+
+.horizontal-list2 li:first-of-type{
+  margin-right: 250px;
+  z-index: 9;
+  width: 75px;
+}
+
+.horizontal-list2 li:last-of-type {
+  margin-right: 50px; /* Add spacing between the list items except for the last one */
+}
+
+/* The rest of your existing CSS styles below */
+
+
+/* Add your CSS styles here */
+
+/* ... Your existing CSS code ... */
+
+/* Media query for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .intro {
+    position: relative;
+    flex-direction:column-reverse; /* Add position relative to the .intro section */
+  }
+  .avatar-stack{
+    position: absolute;
+  }
+
+  .hero {
+    position: absolute; /* Use absolute positioning for the hero image */
+    top: 100px; /* Adjust the top position to place it below the header */
+    left: 50%; /* Center the image horizontally */
+    transform: translateX(-50%); /* Center the image horizontally */
+    width: 80%; /* Adjust the width of the hero image as needed */
+    max-width: 400px; /* Set a maximum width for the hero image */
+    margin: 0; /* Remove any existing margins */
+  }
+
+  /* Adjust the top and left position of the .content class */
+  .content {
+    position: absolute;
+    top: 150%; /* Adjust the top position as needed */
+    left: 50%; /* Center the content horizontally */
+    transform: translate(-50%, -50%);
+    max-width: 80%; /* Set a maximum width for the content */
+  }
+}
+/* ... The rest of your existing CSS code ... */
