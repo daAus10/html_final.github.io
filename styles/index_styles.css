@@ -7,6 +7,12 @@ strong {
   color: cadetblue;
 }
 
+.box {
+
+  border: 1.5px solid black;
+  
+}
+
 body {
   font-family: Inter, sans-serif;
   width: 1200px;
