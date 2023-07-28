@@ -162,9 +162,9 @@ header img {
 }
 
 .box {
-  border: 1px solid #e7e3e3;
+  border: 1.5px solid #040404;
   padding: 20px;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .feat_tit {
